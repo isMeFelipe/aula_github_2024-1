@@ -1,17 +1,20 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		Menu mainMenu =  new Menu("Menu Principal", Arrays.asList("Conta", "Cliente", "Operacoes"));
 		ClienteMenu clientemenu = new ClienteMenu("\nMenu Cliente", Arrays.asList("Metodo1","Metodo2"));
-		int opcao = mainMenu.getSelection();
+		Scanner scanner = new Scanner(System.in);
+		int opcao = mainMenu.getSelection(scanner);
 		System.out.println("A opção "+ opcao + "foi selecionada");
 		if (opcao == 2) {
-			opcao = clientemenu.getSelection();
+			opcao = clientemenu.getSelection(scanner);
 			System.out.println( "A opção "+ opcao + "foi selecionada");
 		}
 
+		scanner.close();
 		System.out.println("Fim");
 	}
 

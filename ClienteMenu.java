@@ -15,9 +15,8 @@ public class ClienteMenu {
         this.options = options;
     }
 
-    public int getSelection() {
+    public int getSelection(Scanner scan) {
         int op = 0;
-        Scanner s = new Scanner(System.in);
         while (op == 0) {
             System.out.println(title + "\n");
             int i = 1;
@@ -27,7 +26,7 @@ public class ClienteMenu {
 
             System.out.println("\nInforme a opcao desejada. ");
             try {
-                op = Integer.parseInt(s.nextLine());
+                op = Integer.parseInt(scan.nextLine());
             } catch (NumberFormatException e) {
                 op = 0;
             }
