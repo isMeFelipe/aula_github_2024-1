@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ClienteMenu {
     private String title;
     private List<String> options;
-    public List<Cliente> clientes ;
+    public List<Cliente> clientes;
 
     public ClienteMenu(List<String> options) {
         this.title = "Menu";

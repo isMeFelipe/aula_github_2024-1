@@ -5,7 +5,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Menu mainMenu =  new Menu("Menu Principal", Arrays.asList("Conta", "Cliente", "Operacoes"));
-		ClienteMenu clientemenu = new ClienteMenu("\nMenu Cliente", Arrays.asList("Metodo1","Metodo2"));
+		ClienteMenu clientemenu = new ClienteMenu("\nMenu Cliente", Arrays.asList("Cadastro","Pesquisa por CPF"));
 		operacoesMenu opmenu = new operacoesMenu("\n Menu operações", Arrays.asList("Saque","Deposito") );
 		Scanner scanner = new Scanner(System.in);
 		int opcao = mainMenu.getSelection(scanner);

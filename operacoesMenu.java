@@ -24,14 +24,14 @@ public class operacoesMenu {
                 System.out.println(i++ + " - " + option);
             }
 
-            System.out.println("\nInforme a opcao desejada. ");
+            System.out.println("\nInforme a opção desejada. ");
             try {
                 op = Integer.parseInt(scan.nextLine());
             } catch (NumberFormatException e) {
                 op = 0;
             }
             if (op >= i) {
-                System.out.println("Opcao errada!");
+                System.out.println("Opção errada!");
                 op = 0;
             }
 
