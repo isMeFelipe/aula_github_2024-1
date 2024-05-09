@@ -1,16 +1,16 @@
 import java.util.List;
 import java.util.Scanner;
 
-public class Menu {
+public class operacoesMenu {
     private String title;
     private List<String> options;
 
-    public Menu(List<String> options) {
+    public operacoesMenu(List<String> options) {
         this.title = "Menu";
         this.options = options;
     }
 
-    public Menu(String title, List<String> options) {
+    public operacoesMenu(String title, List<String> options) {
         this.title = title;
         this.options = options;
     }
@@ -24,7 +24,7 @@ public class Menu {
                 System.out.println(i++ + " - " + option);
             }
 
-            System.out.println("Informe a opção desejada. ");
+            System.out.println("\nInforme a opção desejada. ");
             try {
                 op = Integer.parseInt(scan.nextLine());
             } catch (NumberFormatException e) {
@@ -39,6 +39,4 @@ public class Menu {
         return op;
     }
 
-
-    
 }
